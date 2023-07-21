@@ -1,0 +1,121 @@
+
+
+/*
+    Table Style Sheet for Semester Project
+    Author: J. Adam Saenzpardo
+    Date:   March 27, 2020
+   
+    Filename: table.css
+
+*/
+
+table.research {
+    -webkit-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+    border: 15px outset rgb(151, 151, 151);
+    border-collapse: collapse;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    width: 70%;
+    margin: 0 auto;
+    border: transparent;
+}
+
+tr {
+    height: 25px;
+}
+
+th,
+td {
+    border: 1px solid gray;
+    vertical-align: top;
+    padding: 5px;
+}
+
+
+/* Table Caption Styles */
+
+caption {
+    text-align: center;
+    caption-side: bottom;
+    color: darkgray;
+}
+
+
+/* Table Column Styles */
+
+col.topicColumn {
+    background-color: #E0E2E4;
+    width: 10%;
+}
+
+col.infoColumns {
+    background-color: #e0e2e4;
+    width: 11%;
+}
+
+col.linkColumns {
+    width: 17%;
+    background-color: #E0E2E4;
+}
+
+.shoutout {
+    color: green;
+    text-align: center;
+}
+
+
+/* Table Header styles */
+
+thead {
+    color: white;
+    background-color: black;
+}
+
+thead th:first-of-type {
+    background-color: black;
+}
+
+thead th:nth-of-type(7),
+thead th:nth-of-type(8) {
+    background-color: black;
+}
+
+
+/* Table Links */
+
+.tlinks {
+    color: darkred;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+/* Table Footer Styles */
+
+tfoot {
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+/* Mobile Style */
+
+@media only screen and (max-width: 480px) {
+
+    td, th {
+        color: cadetblue;
+    }
+    .ttitle {
+        color: white;
+    }
+
+    .tlinks {
+        color: darkred;
+    }
+
+    table.research {
+        width: 90%;
+    }
+}

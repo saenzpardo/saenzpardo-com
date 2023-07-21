@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 
+           _
+       .__(.)< (MEOW)
+        \___)   
+ ~~~~~~~~~~~~~~~~~~
+    INFO-1500 semester project 
+    Author: J. Adam Saenzpardo
+    Date: March 15, 2020
+    
+    4/10/2020 - added print style sheet
+
+    page3.html
+    -->
+    <meta charset="utf-8" />
+    
+    <meta content="width=device-width, initial-scale-1" name="viewport" />
+    <title>Web Browsers</title>
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/layout.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/print.css" rel="stylesheet" media="print" />
+    <link href="css/mobile.css" rel="stylesheet" />
+    <script src="js/main.js"></script>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+        // mobile menu script
+        function myFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Mobile Navigation Menu -->
+    <div class="topnav">
+    <a href="index.html" class="active">Home</a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+        <a href="page2.html">New Tech</a>
+        <a href="page2.html">New Tech</a>
+        <a href="page3.html">Web Browsers</a>
+        <a href="page4.html">The Future</a>
+        <a href="about.html">About</a>
+        <br />
+        <a href="mailto:jesus93761@cccneb.edu">Contact Me</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+    </div>
+    <main>
+        <header>
+            <nav id="topLinks"> <a href="about.html">About</a> | <a href="mailto:jesus93761@cccneb.edu">Contact Me</a>
+            </nav>
+            <a href="index.html"><img src="media/banner1.png" alt="The Modern Web" /></a>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="page2.html">New Tech</a></li>
+                    <li><a href="page4.html">The Future</a></li>
+                </ul>
+            </nav>
+            <h1>Web Browsers</h1>
+        </header>
+
+        <iframe id="presentation" src="https://onedrive.live.com/embed?cid=36E03CC950DEBEAE&amp;resid=36E03CC950DEBEAE%218450&amp;authkey=AJqGfwSQKkp4dv0&amp;em=2&amp;wdAr=1.7777777777777777" width="962px" height="565px" frameborder="0">This is an embedded <a target="_blank"
+                href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank"
+                href="https://office.com/webapps">Office</a>.</iframe>
+        <!--
+        <article>
+            <h1>Konqueror</h1>
+            <img class="topPic" width="200" src="media/kde-logo.jpg" alt="topPic" />
+            <h2>General Information</h2>
+            <p>Konqueror was created as an open source competitor to Netscape and Internet Explorer.  It is considered a “light weight” browser that does not consume resources like many other popular browsers today.  It is highly configurable and can also be used as a file manager.  It was created in 1996 and supports many popular protocols.  </p>
+
+            <h2>Life Cycle</h2>
+            <p>It is still maintained and actively developed by the open source community, making one of the oldest browsers still in use to date.  The community encourages involvement with a beginner projects and projects needing maintenance and development.  The interface is crisp, easy to use and can be configured to your needs.  Comprised of the KDE desktop environment, it is only available on most Unix-like operating systems utilizing a Linux kernel.  </p>
+
+            <h2>Improvement</h2>
+            <p></p>
+
+            <iframe class="video" width="300" height="240" src="https://www.youtube.com/embed/dNu5aOIJYA8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <h2>Features</h2>
+            <p>Considered the swiss army knife of file management, it contains a full featured ftp client, ability to preview files, numerous plugins and web browsing.  Its almost as if the creators wanted to design a web browser and created all of it’s other uses first.  Key features include the support of popular protocols such as BitTorrent, HTTP, IMAP, Samba, VNC viewer and, my personal favorite, an ISO viewer.</p>
+
+            <h2>Evolution</h2>
+            <p>Konqueror is no longer the default KDE file manager and has since been replaced with the Dolphin file manager.  Konqueror is still the KDE default web browser.  </p>
+
+            <h1>Mozilla Firefox</h1>
+            <img class="topPic" width="200" src="media/firefox.jpg" alt="topPic" />
+            <h2>General Information</h2>
+            <p>Firefox was developed by the Mozilla foundation, a non-profit organization that encourages open source free software.  Their mission statement insists the internet is a resource that should be available to everyone without censorship and considered a basic human right enriching the lives of human beings and contributing to the greater good.  Firefox was designed with privacy and security in mind and that you have the right to create your own experience without worrying about privacy concerns.  Believing the only true internet experience involves an unregulated balance between commercial profit and public benefit.</p>
+
+            <h2>Life Cycle</h2>
+            <p>  </p>
+
+            <h2>Improvement</h2>
+            <p>Created in 2002 by the Mozilla Foundation it is truly cross platform available for use on all operating systems including mobile devices.  There are many browsers that have been created using the Firefox source code.  One of the more controversial is the “Tor” browser.  A browser focused on anonymity which is used exclusively to visit the dark web.  Created for truly private and untraceable web browsing, criminals flocked to the dark web and created pages posting/selling illegal weapons, drugs, sex/slave trade, child pornography, assassination lists and hit men for hire, extreme violence and hate groups along with the worst humanity can offer. </p>
+
+            <iframe class="video" width="300" height="240" src="https://www.youtube.com/embed/U0SZ85nO8Pg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <h2>Features</h2>
+            <p>Firefox is a very popular web browser among developers.  It has numerous extensions and plugins front-end developers rely on for efficient web development.  It was the first browser to advertise it’s developer tool bar allowing you to view and modify web page HTML/CSS code, view the page layout and give access to a Javascript console which I frequently use as a calculator!  A video below discusses some popular browser extensions from one of my favorite open source enthusiasts, Nixie Pixel. </p>
+
+            <h2>Evolution</h2>
+            <p></p>
+
+            <h1>SRWare Iron</h1>
+            <img class="topPic" width="200" src="media/IronPortable.png" alt="topPic" />
+            <h2>General Information</h2>
+            <p>Iron is a browser based on the Chromium open source browser project from Google and launched in 2008 shortly after Google’s Chrome browser release.  It was created by a German company called SRWare.  The company specializes in data harvesting for advertising supported services.  I found this very interesting and I do believe the browser was designed with privacy in mind.  Their pitch includes a fast, private, simple and secure web browser.  Although not much different from Google’s chrome browser, Iron encourages users not to use Chrome due to privacy concerns.   </p>
+
+            <h2>Life Cycle</h2>
+            <p>While currently still in development and technically open source software, critics argue the source code has not been released for years, along with version history, update documentation and bug fixes.  It is considered a “Chrome clone” and the creators do not deny that it is.  Faithful users have posted frustration for the blocking for Chrome extensions in Iron and continually warn others of the personal data harvested from using Chrome browsers.  </p>
+
+            <h2>Improvement</h2>
+            <p></p>
+
+            <iframe class="video" width="300" height="240" src="https://www.youtube.com/embed/TNAqc0GwOuA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <h2>Features</h2>
+            <p>After using the browser, I found it to be fast and a pleasant experience.  The user interface is easy on the eyes and I feel they did a good job customizing it to feel like Chrome, while knowing you’re not using Chrome.  Below is a video I discovered on Vimeo that displays the user interface and some web browsing features.  </p>
+
+            <h2>Evolution</h2>
+            <p></p>
+        </article>
+    -->
+        <footer>
+            Authored by: Adam Saenzpardo | Hastings, NE 68901 | Central Nebraska Community College<br /><br /> Edited: 4/22/2020
+        </footer>
+    </main>
+</body>
+
+</html>

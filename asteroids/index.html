@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<html>
+  <head>
+      <title>Adam's Asteroids</title>
+    <link href="../css/styles.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+    <script src="jquery-1.4.1.min.js"></script>
+    <script src="vector_battle_regular.typeface.js"></script>
+    <script src="ipad.js"></script>
+    <script src="game.js"></script>
+    <style>
+      #game-container {
+        display: flexbox;
+      }
+      .game {
+        display: flexbox;
+        position: relative;
+        text-align: center;   
+         
+      }
+      h1, h3 {
+        color: magenta;
+        filter: invert(75%);
+      }
+      body {
+        background-image: linear-gradient(135deg, red, orange, yellow, orange, red);
+      }
+      #canvas { 
+        border:1px solid black;
+        margin: 15px;
+         }
+      .button { position:absolute; border:1px solid black; }
+      #left-controls { position:absolute; left:1px; bottom:0px; display:none; }
+      #right-controls { position:absolute; right:1px; bottom:0px; display:none; }
+      #up { width:200px; height:100px; bottom:100px;}
+      #left { width:100px; height:100px; bottom:0px;}
+      #right { width:100px; height:100px; bottom:0px; left:100px; }
+      #space { width:200px; height:200px; bottom:0px; right:0px; }
+    </style>
+  </head>
+  <body>
+    <section class="game">
+      <h1>Asteroids</h1>
+      <h3>Not optimized for mobile devices</h3>
+       
+      <div id="game-container">
+        <canvas id="canvas" width="780" height="540"></canvas>
+        <div id="left-controls">
+          <div id="up" class='button'>THRUST</div>
+          <div id="left" class='button'>LEFT</div>
+          <div id="right" class='button'>RIGHT</div>
+        </div>
+        <div id="right-controls">
+          <div id="space" class='button'>FIRE</div>
+        </div>
+      </div>
+      
+      <div id="explanation" style="float: left; margin-left: 20px; color: black; text-align: center;">
+        <p>
+          I found the code for this project online and continue to modify and update it as a way to practice my JavaScript skills and 
+          continue to challenge myself.  Enjoy the game and please report any bugs.
+        </p>
+
+      </div>
+      
+      <footer class=""><div class="container">Copyright &copy; Saenzpardo.com 2020</div>
+        <div class="container" style="margin-bottom: 40px;"><a href="https://www.saenzpardo.com" target=" _blank">Home</a></div></footer>
+    </section>
+  </body>
+</html>

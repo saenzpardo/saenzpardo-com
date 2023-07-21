@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+/*
+     
+   Reset Style Sheet for Semester Project
+   Author: J. Adam Saenzpardo
+   Date:   March 15, 2020
+   
+   Filename: reset.css
+
+*/
+
+
+/* Structural Styles */
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+    display: block;
+    /* defines display properties */
+}
+
+
+/* Typographic Styles */
+
+address,
+article,
+aside,
+blockquote,
+body,
+cite,
+div,
+dl,
+dt,
+dd,
+em,
+figcaption,
+figure,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+img,
+li,
+main,
+nav,
+ol,
+p,
+section,
+span,
+ul {
+    background: transparent;
+    /* makes background color transparent */
+    font-size: 100%;
+    /* sets font size equal to parent */
+    margin: 0;
+    /* removes all margin and padding spaces */
+    padding: 0;
+    /* removes all margin and padding spaces */
+    vertical-align: baseline;
+    /* aligns all content with the baseline */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style: none;
+    /* does not display markers for unordered lists within navigation lists */
+    list-style-image: none;
+    /* does not display markers for unordered lists within navigation lists */
+}
+
+nav a {
+    text-decoration: none;
+    /* does not underline hypertext links within navigation lists */
+}
+
+body {
+    line-height: 1;
+    /* single spaces all body text */
+}

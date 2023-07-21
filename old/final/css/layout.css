@@ -1,0 +1,259 @@
+
+
+/*
+    Layout Style Sheet for Semester Project
+    Author: J. Adam Saenzpardo
+    Date:   March 15, 2020
+   
+    Filename: layout.css
+
+*/
+
+
+/* Body Styles  */
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+    min-width: 640px;
+}
+
+body>main>header {
+    margin: 0;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.intro {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}
+
+body>main>header>a>img {
+    display: block;
+    margin: 0 auto;
+    padding: 0px;
+    width: 100%;
+}
+
+body>main>header>img {
+    display: block;
+    margin: 0 auto;
+    padding: 0px;
+    width: 100%;
+}
+
+body>main>article>h1 {
+    padding: 30px;
+}
+
+body>main>article h2 {
+    text-align: left;
+    padding: 15px;
+    padding-left: 100px;
+}
+
+body>main>article>p {
+    display: block;
+    color: #E0E2E4;
+    width: 80%;
+    text-align: justify;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+
+.text {
+    display: block;
+    color: #E0E2E4;
+    width: 80%;
+    margin: 20px auto;
+    padding-bottom: 15px;
+    text-align: justify;
+}
+
+
+/* Media Layout */
+
+.topPic {
+    -webkit-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    float: left;
+    margin: 5px 20px 10px 30px
+}
+
+.video {
+    -webkit-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+    float: right;
+    margin: 40px;
+    border-radius: 20px;
+}
+
+img.round {
+    -webkit-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+    float: right;
+    height: 30%;
+    width: 30%;
+    margin: 20px;
+    border-radius: 180px;
+}
+
+#introVideo {
+    display: block;
+    position: relative;
+}
+
+#introVideo video {
+    -webkit-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+    display: block;
+    margin: 10px auto;
+    width: 70%;
+}
+
+#featured-video {
+    transition: width .2s ease-in-out, height .2s ease-in-out, transform .38s ease-in-out;
+}
+
+
+/** Use .sticky */
+
+#featured-video.is-sticky {
+    position: fixed;
+    top: 15px;
+    left: auto;
+    max-width: 280px;
+    max-height: 158px;
+    width: 280px;
+    height: 158px;
+}
+
+@media screen and (min-width: 1120px) {
+    #featured-video.is-sticky {
+        transform: translateX(-80%);
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    #featured-video.is-sticky {
+        transform: translateX(-115%);
+    }
+}
+
+
+/* Powerpoint styles */
+
+#presentation {
+    -webkit-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+    display: block;
+    border: 4px solid rgb(169, 130, 88);
+    margin: 25px auto;
+    text-align: center;
+}
+
+
+/* Navigation List Styles */
+
+nav {
+    display: table;
+    width: 100%;
+    padding: 10px;
+}
+
+nav>ul {
+    display: inline;
+    margin: 0 auto;
+}
+
+nav>ul>li {
+    display: table-cell;
+    padding: 30px;
+    text-align: center;
+}
+
+nav>ul>li>a {
+    display: block;
+}
+
+body>main>header>nav#topLinks {
+    text-align: right;
+    float: right;
+    margin: 15px 15px 0px 0px;
+}
+
+
+/* Form Styles */
+
+form {
+    -webkit-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+    display: block;
+    border: 4px solid rgb(169, 130, 88);
+    width: 75%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+
+/* Add some padding and a grey background color to containers */
+
+.container {
+    padding: 20px;
+    background-color: #E0E2E4;
+}
+
+
+/* Style the input elements and the submit button */
+
+input[type=text],
+input[type=submit] {
+    width: 25%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+/* Add margins to the checkbox */
+
+input[type=checkbox] {
+    margin-top: 16px;
+}
+
+
+/* Style the submit button */
+
+input[type=submit] {
+    background-color: #625750;
+    color: white;
+    border: none;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+
+/* Footer Styles */
+
+footer {
+    display: block;
+    margin: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+}

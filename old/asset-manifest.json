@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4f444fba.chunk.css",
+    "main.js": "/static/js/main.3dd8e779.chunk.js",
+    "main.js.map": "/static/js/main.3dd8e779.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.acfdd3b2.js",
+    "runtime~main.js.map": "/static/js/runtime~main.acfdd3b2.js.map",
+    "static/js/2.55223797.chunk.js": "/static/js/2.55223797.chunk.js",
+    "static/js/2.55223797.chunk.js.map": "/static/js/2.55223797.chunk.js.map",
+    "static/css/3.034f119b.chunk.css": "/static/css/3.034f119b.chunk.css",
+    "static/js/3.8793fcd1.chunk.js": "/static/js/3.8793fcd1.chunk.js",
+    "static/js/3.8793fcd1.chunk.js.map": "/static/js/3.8793fcd1.chunk.js.map",
+    "static/css/4.6973c846.chunk.css": "/static/css/4.6973c846.chunk.css",
+    "static/js/4.efc031ff.chunk.js": "/static/js/4.efc031ff.chunk.js",
+    "static/js/4.efc031ff.chunk.js.map": "/static/js/4.efc031ff.chunk.js.map",
+    "static/css/5.549bac7f.chunk.css": "/static/css/5.549bac7f.chunk.css",
+    "static/js/5.d61f7e75.chunk.js": "/static/js/5.d61f7e75.chunk.js",
+    "static/js/5.d61f7e75.chunk.js.map": "/static/js/5.d61f7e75.chunk.js.map",
+    "static/js/6.86315266.chunk.js": "/static/js/6.86315266.chunk.js",
+    "static/js/6.86315266.chunk.js.map": "/static/js/6.86315266.chunk.js.map",
+    "static/js/7.05ef4b32.chunk.js": "/static/js/7.05ef4b32.chunk.js",
+    "static/js/7.05ef4b32.chunk.js.map": "/static/js/7.05ef4b32.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.5455dd4cdef799e88bad0b3ee576de95.js": "/precache-manifest.5455dd4cdef799e88bad0b3ee576de95.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/3.034f119b.chunk.css.map": "/static/css/3.034f119b.chunk.css.map",
+    "static/css/4.6973c846.chunk.css.map": "/static/css/4.6973c846.chunk.css.map",
+    "static/css/5.549bac7f.chunk.css.map": "/static/css/5.549bac7f.chunk.css.map",
+    "static/css/main.4f444fba.chunk.css.map": "/static/css/main.4f444fba.chunk.css.map",
+    "static/media/navi-logo.svg": "/static/media/navi-logo.0f2f9d7f.svg",
+    "static/media/react-logo.svg": "/static/media/react-logo.ee7cd8ed.svg"
+  }
+}

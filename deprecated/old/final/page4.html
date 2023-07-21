@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 
+           _
+       .__(.)< (MEOW)
+        \___)   
+ ~~~~~~~~~~~~~~~~~~
+    INFO-1500 semester project 
+    Author: J. Adam Saenzpardo
+    Date: March 15, 2020
+    
+    4/10/2020 - added print style sheet
+
+    page4.html
+    -->
+    <meta charset="utf-8" />
+    
+    <meta content="width=device-width, initial-scale-1" name="viewport" />
+    <title>The Future of the Web</title>
+
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/layout.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/table.css" rel="stylesheet" />
+    <link href="css/print.css" rel="stylesheet" media="print" />
+    <link href="css/mobile.css" rel="stylesheet" />
+    <script src="js/main.js"></script>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+        // mobile menu script
+        function myFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Mobile Navigation Menu -->
+    <div class="topnav">
+    <a href="index.html" class="active">Home</a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+        <a href="page2.html">New Tech</a>
+        <a href="page2.html">New Tech</a>
+        <a href="page3.html">Web Browsers</a>
+        <a href="page4.html">The Future</a>
+        <a href="about.html">About</a>
+        <br />
+        <a href="mailto:jesus93761@cccneb.edu">Contact Me</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+    </div>
+    <main>
+        <header>
+            <nav id="topLinks"> <a href="about.html">About</a> | <a href="mailto:jesus93761@cccneb.edu">Contact Me</a></nav>
+            <a href="index.html"><img src="media/banner1.png" alt="The Modern Web" /></a>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="page3.html">Web Browsers</a></li>
+                    <li><a href="page2.html">New Tech</a></li>
+
+                </ul>
+            </nav>
+            <h1>The Future of the Web</h1>
+        </header>
+
+        <article>
+            <div class="text">
+                <br />
+                <h2>Yet to be determined...</h2>
+                <p>
+                    Although the future of the internet cannot be easily determined. I believe we have come full circle. Computers started with one centralized server and many workstations connected to that mainframe computer. This is what the Chrome Book has become. Progressive
+                    web applications and large data centers coupled with increased connection speeds, powerful processors, faster solid-state drives and cheaper ram with higher capacity have created a portable workstation that doesn’t need to have native
+                    applications installed. This is leading to the advancement of infrastructure as a service, software as a service, desktop as a service and many other online services. This allows for the rapid scalability if a business quickly grows
+                    and then quickly reduces size.
+
+                </p><br />
+                <hr>
+                
+                <p>
+                    Gaming as a service will quickly take hold. You no longer need expensive hardware to play the latest video games. This is an industry that brought in over $150 billion dollars in 2019. They have the ability to make more money if they can reach users that
+                    can’t afford an expensive game system or powerful computer with the latest graphics cards. With cloud gaming services like GeForce Now, you can play the latest games on almost any device.
+
+                </p><br />
+                <hr>
+                <p>
+                    The increase in connectivity will also allow for real time data tracking that will increase machine learning opportunities. Autonomous cars would instantly be able to communicate to each other when traffic delays are present and re-calculate more efficient
+                    routes. I believe machine learning will soon take over many positions, including front-end developer jobs. We will rely more on machine learning technology for economic decisions, public transportation, managing a large corporate computer
+                    network and routing packages efficiently. It really can be applied to almost anything that is created or consumed. I just hope we use the data as a consideration and do not become reliant on the technology.
+                </p>
+            </div>
+        </article>
+
+
+        <table class="research">
+            <caption>Information Subject to Interpretation</caption>
+
+            <colgroup>
+                <col class="topicColumn" />
+                <col class="infoColumns" span="5" />
+                <col class="linkColumns" span="2" />
+            </colgroup>
+
+            <thead>
+                <tr>
+                    <th class="ttitle">Topic</th>
+                    <th class="ttitle">Name</th>
+                    <th colspan="5" class="ttitle">Resources</th>
+                    <th class="ttitle">Site Link</th>
+
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <th rowspan="2">Important Websites</th>
+                    <td>FaceBook</td>
+                    <td colspan="5"><a class="tlinks" href="https://en.wikipedia.org/wiki/Facebook" target="_blank">Wikipedia</a>,
+                        <a class="tlinks" href="https://www.businessinsider.com/ftc-considering-record-setting-fine-facebook-privacy-report-2019-1" target="_blank">Business
+                            Insider</a></td>
+                    <td><a class="tlinks" href="http://www.facebook.com" target="_blank">Facebook</a></td>
+                </tr>
+
+                <tr>
+
+                    <td>Reddit</td>
+                    <td colspan="5"><a class="tlinks" href="https://en.wikipedia.org/wiki/Reddit" target="_blank">Wikipedia</a>,
+                        <a class="tlinks" href="https://www.ncrypted.net/blog/how-does-reddit-work-insights-into-reddit-business-model-and-revenue-model-of-reddit/" target="_blank">The
+                            NCRYPTED Blog</a>
+                    </td>
+                    <td><a class="tlinks" href="http://www.reddit.com" target="_blank">Reddit</a></td>
+                </tr>
+
+                <tr>
+                    <th rowspan="2">New Technology</th>
+
+                    <td>Artificial Intelligence</td>
+                    <td colspan="5"><a class="tlinks" href="https://www.britannica.com/technology/artificial-intelligence" target="_blank">Encyclopedia
+                            Britannica</a></td>
+                    <td>N/A</td>
+                </tr>
+
+                <tr>
+
+                    <td>MOV Extensions</td>
+                    <td colspan="5">
+                        <a class="tlinks" href="https://file.org/extension/mov" target="_blank">File.org</a>, <a class="tlinks" href="https://www.lifewire.com/what-is-an-mov-file-2622779" target="_blank">LifeWire</a>
+                    </td>
+                    <td>
+                        <a class="tlinks" href="https://www.apple.com/quicktime/download/" target="_blank">Quick
+                            Time</a> </td>
+                </tr>
+
+                <tr>
+                    <th rowspan="3">Web Browsers</th>
+                    <td>KDE Konqueror</td>
+                    <td colspan="5"><a class="tlinks" href="https://userbase.kde.org/Konqueror" target="_blank">KDE
+                            Wiki</a>,
+                        <a class="tlinks" href="https://en.wikipedia.org/wiki/Konqueror" target="_blank">Wikipedia</a>
+                    </td>
+                    <td>
+                        <a class="tlinks" href="https://kde.org/applications/internet/org.kde.konqueror" target="_blank">Konqueror</a>
+                    </td>
+                </tr>
+
+                <tr>
+
+                    <td>Mozilla Firefox</td>
+                    <td colspan="5"><a class="tlinks" href="https://en.wikipedia.org/wiki/Firefox" target="_blank">Wikipedia</a></td>
+                    <td>
+                        <a class="tlinks" href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">Firefox</a>
+                    </td>
+                </tr>
+
+                <tr>
+
+                    <td>SRWare Iron</td>
+                    <td colspan="5"><a class="tlinks" href="https://en.wikipedia.org/wiki/SRWare_Iron" target="_blank">Wikipedia</a>,
+                        <a class="tlinks" href="https://www.cnet.com/how-to/three-privacy-focused-browsers-compared/" target="_blank">CNET article</a></td>
+                    <td>
+                        <a class="tlinks" href="https://www.srware.net/iron/" target="_blank">SRWare Iron</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Moving Forward</th>
+
+                    <td>Future of the Web</td>
+                    <td class="shoutout" colspan="5">You are the future! Will you be a <em>consumer</em> of technology or a
+                        <em>contributor</em>?</td>
+                    <td>N/A</td>
+                </tr>
+
+
+
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="8">Contact me for any follow up questions</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <!-- newsletter form -->
+        <form>
+            <div class="container">
+                <h2>Subscribe to our Newsletter</h2>
+                <p>The changing nature of the Web and CSS</p>
+            </div>
+
+            <div class="container" style="background-color:white">
+                <label>Name
+                <input type="text" placeholder="Name" name="name" required>
+                </label>
+                <label>Email
+                <input type="text" placeholder="Email address" name="mail" required>
+                </label>
+                <label>
+                    <input type="checkbox" checked="checked" name="subscribe"> Weekly Newsletter
+                </label>
+            </div>
+
+            <div class="container">
+                <input type="submit" value="Subscribe">
+            </div>
+        </form>
+
+
+
+        <footer>
+            Authored by: Adam Saenzpardo | Hastings, NE 68901 | Central Nebraska Community College <br /><br /> Edited: 4/22/2020
+        </footer>
+    </main>
+</body>
+
+</html>

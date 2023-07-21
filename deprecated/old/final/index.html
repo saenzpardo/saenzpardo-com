@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 
+           _
+       .__(.)< (MEOW)
+        \___)   
+ ~~~~~~~~~~~~~~~~~~
+    INFO-1500 semester project 
+    Author: J. Adam Saenzpardo
+    Date: March 15, 2020
+    
+    4/10/2020 - added print style sheet
+
+    index.html
+    -->
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale-1" name="viewport" />
+    <title>The Modern Web</title>
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/layout.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/print.css" rel="stylesheet" media="print" />
+    <link href="css/mobile.css" rel="stylesheet" />
+    <script src="js/main.js"></script>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+    
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+        // mobile menu script
+        function myFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Mobile Navigation Menu -->
+    <div class="topnav">
+    <a href="index.html" class="active">Home</a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+        <a href="page2.html">New Tech</a>
+        <a href="page2.html">New Tech</a>
+        <a href="page3.html">Web Browsers</a>
+        <a href="page4.html">The Future</a>
+        <a href="about.html">About</a>
+        <br />
+        <a href="mailto:jesus93761@cccneb.edu">Contact Me</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+    </div>
+    <main>
+        <header>
+            <nav id="topLinks"> <a href="about.html">About</a> | <a href="mailto:jesus93761@cccneb.edu">Contact Me</a></nav>
+            <img src="media/banner1.png" alt="The Modern Web" />
+            <nav class="navigation">
+                <ul>
+                    <li><a href="page2.html">New Tech</a></li>
+                    <li><a href="page3.html">Web Browsers</a></li>
+                    <li><a href="page4.html">The Future</a></li>
+                </ul>
+            </nav>
+            <h1>History and Development of Important Websites</h1>
+        </header>
+        <div class="intro">
+            <p>Click <em>play</em> to view the introductory Video</p>
+            <figure id="introVideo">
+                <video controls id="featured-video" onloadstart="this.volume=0.32">
+                <source src="media/intro.mp4" type="video/mp4" />
+            </video>
+            </figure>
+        </div>
+        <article class="facebook">
+            <h1>Facebook</h1>
+            <img class="topPic" src="media/zuck.jpg" alt="Mark Zuckerburg" />
+            <h2>General Information</h2>
+            <p>Facebook is a popular social media platform and was dreamt up in a Harvard dorm room in 2004 by Mark Zuckerberg and Eduardo Saverin. Cameron Winkelvoss, Tyler Winklevoss and Divya Narendra later accused Mark of theft of intellectual property
+                believing Mark had used their ideas to create a competing product. Facebook, Inc later settled out of court for shares in the company valued at roughly 300 million dollars at the launch of Facebook’s IPO. An estimated 2.5 billion people
+                all over the world account for Facebook’s active user base1. This has caught the attention of advertising groups, which is the only real revenue stream for the company.</p>
+            <h2>Life Cycle</h2>
+            <p>Since its inception, Facebook has continued to grow in population. Many users find it a good way to keep in touch with relatives, extended family and friends all over the world. The site features a “newsfeed” which can be catered to your specific
+                interests. When you create a profile, you can post updates about daily activities and “check-in” to businesses and places of interest. You can post videos, pictures and share other posts you may find interesting or newsworthy.</p>
+            <iframe class="video" width="300" height="240" src="https://www.youtube.com/embed/-KFCICiQOcE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <h2>Improvement</h2>
+            <p>Although improvements have been made to the site, it is generally not much different from it’s first launch. The page is free of “noise” with a white background and is easy to navigate. </p>
+            <h2>Features</h2>
+            <p>There have been, what I will call modules, added such as Facebook Marketplace. This allows users to post items for sale and see what others might be selling. In my own personal opinion, it has led the decline of Craigslist. Facebook messenger
+                was a large undertaking. It is a messenger service that allows you to instant message other users and even perform voice calls. It is so involved; you can use the messenger application on a mobile device to send and receive text messages.
+            </p>
+            <h2>Evolution</h2>
+            <img class="round" src="media/profile.png" alt="Profile Screenshot" />
+            <p>Privacy has recently become a concern. Facebook’s business model relies on developing a user profile. This can be used for directed advertisement based on brands you “like” or “follow” and is more likely to trigger impulse purchases. Facebook
+                now allows more control of privacy and targeted advertising. You don’t pay upfront for using the service. You pay with your data, which can be sold to third parties for targeted advertising. </p>
+        </article>
+        <br />
+        <br />
+        <br />
+        <hr>
+        <article class="reddit">
+            <h1>
+                Reddit
+            </h1>
+            <img class="topPic" src="media/reddit.jpg" alt="Reddit Logo" />
+            <h2>General Information</h2>
+            <p>Reddit is described as the “front page of the internet.” Reddit is a large collection of forums where people can share news, communicate ideas, comment on the posts of other content creators and just browse feeds that are geared to your interest.
+                The site may seem confusing at first with it’s /r/ and u/user notations. Reddit is shorthand for “Read/Edit.” /r/ is a reddit “feed” and u/ notates a username. There are also “subreddits.” If you search the internet for “r/football” you
+                will see reddit discussion boards for football. Don’t get too excited if you’re reading this in America. It’s what the rest of the world considers football, or what you might call soccer. </p>
+            <h2>Life Cycle</h2>
+            <p>It was founded at the University of Virginia by college roommates Steve Huffman and Alexis Ohanian. The roommates came up with the idea during a brainstorming session after a previous idea had failed. Coded in the common Lisp language, it
+                was launched midyear 2005. </p>
+            <iframe class="video" width="300" height="240" src="https://www.youtube.com/embed/bWnhD1OgQdg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2>Improvement</h2>
+            <p>Reddit was re-written in Python shortly after it’s launch and it has archived it’s open source repositories shortly after migrating is private servers to AWS, or Amazon Web Services. The site has only undergone one major design update and
+                it is currently one of the most popular web sites in the world. </p>
+            <h2>Features</h2>
+            <p>As stated in the video below, the predictive power of Reddit is incredibly accurate. This allows advertisers to cater advertising based on a digital profile of you. Targeted advertising makes up Reddit’s largest revenue base. Privacy concerns
+                are not the only controversy to plague Reddit. There are many subreddits that people find offensive or explicit. The company holds a firm stance on freedom of speech and has maintained the ideology to date. Elicit subreddits include “hate
+                pages” geared toward spreading ethnic, religious, body type and sexuality hate. There are also discussion boards encouraging pedophilia, under the table firearms sales, violent content and much more. If you can think of something terrible,
+                there’s most likely a Reddit for it.</p>
+            <img class="round" src="media/reddit_circ.png" alt="Reddit Screenshot" />
+            <h2>Evolution</h2>
+            <p>As Reddit continues to evolve, it becomes just as important to monitor threads for innapropriate or abusive content.  Reddit has done extensive "remodeling" of it's policy to determine what is allowed under free speech and what content will be considered offensive.  This continues to be a challenge today on where to draw the line.</p>
+            <br />
+            <br />
+        </article>
+        <footer>
+            Authored by: Adam Saenzpardo | Hastings, NE 68901 | Central Nebraska Community College<br /><br /> Edited: 4/22/2020
+
+        </footer>
+    </main>
+</body>
+
+</html>

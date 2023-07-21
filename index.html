@@ -1,0 +1,847 @@
+<!--
+    Personal portfolio page
+    Photos are from my adventures, not stock photos.
+    The Cliffs of Moher photo was taken on my landing page!
+    I highly recommend a visit to Ireland if you can.
+    Author: J. Adam Saenzpardo
+    Date: 8/29/2020 - year of the COVID! 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Adam Saenzpardo</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Chart canvas -->
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <!-- <a class="navbar-brand js-scroll-trigger" href="playground.html">Code Playground</a> -->
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#signup">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="playground.html">Code
+                            Playground</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger"
+                            href="/asteroids/index.html">Asteroids</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masterhead">
+        <div class="container d-flex h-100 align-items-center">
+            <div class="mx-auto text-center">
+                <h1 class="mx-auto my-0 text-uppercase" style="flex-wrap: nowrap;">Hello</h1>
+                <h2 class="mx-auto mt-2 mb-5" style="color: white; opacity: 0.7;">My name is ADAM SAENZPARDO. I'm
+                    expanding my knowledge of software development everyday and I might want to work with you.
+                    First let's get to know each other a little more.</h2>
+                <a class="btn btn-primary js-scroll-trigger" href="#about">Getting Started</a>
+            </div>
+        </div>
+    </header>
+    <!-- About-->
+    <!-- adventure section - hidden on page load -->
+    <section class="about-section text-center " style="background-image: linear-gradient(black, gray);" id="about">
+        <div class="container toggleMe" id="adventure">
+            <h1 class="text-white mx-auto my-4 text-uppercase myHeadingShadow">Adventures</h1>
+            <div class="row justify-content-between">
+                <div class="col-sm-4">
+                    <figure>
+                        <img class="img-fluid mb-3 mb-lg-0 rounded myImg hover-shadow modalin"
+                            onclick="openModal();currentSlide(1)" src="media/yellowstone2.jpg"
+                            alt="My Family At Yellowstone" />
+                        <figcaption style="color:#64a19d; padding: 10px;">In Yellowstone Summer 2020</figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-4">
+                    <figure>
+                        <img class="img-fluid mb-3 mb-lg-0 rounded myImg hover-shadow modalin"
+                            onclick="openModal();currentSlide(2)" src="media/superior.jpg"
+                            alt="superior hiking trail" />
+                        <figcaption style="color:#64a19d; padding: 10px;">Backpacking the Superior Hiking Trail with my
+                            wife</figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-4">
+                    <figure>
+                        <img class="img-fluid mb-3 mb-lg-0 rounded myImg hover-shadow modalin"
+                            onclick="openModal();currentSlide(3)" src="media/puerto_rico.JPG"
+                            alt="family in Puerto Rico" />
+                        <figcaption style="color:#64a19d; padding: 10px;">Family vacation to Puerto Rico</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <!-- profession section - visible on page load -->
+        <div class="container toggleMe" id="professional">
+            <h1 class="text-white mx-auto my-4 text-uppercase myHeadingShadow">Balancing family, life and work</h1>
+            <div class="row justify-content-around">
+                <div class="col-sm-5">
+                    <figure>
+                        <img class="img-fluid mb-3 mb-lg-0 shad pictureShadow" src="media/0912201758b.jpg"
+                            alt="Me working from my home office" />
+                        <figcaption style="color:#64a19d; padding: 10px;">Hard at work</figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-5">
+                    <figure>
+                        <img class="img-fluid mb-3 mb-lg-0 shad pictureShadow" src="media/shrub_tie.jpg"
+                            alt="My wonderful family" />
+                        <figcaption style="color:#64a19d; padding: 10px;">My wonderful Family</figcaption>
+                    </figure>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Button to change to adventure modes -->
+
+        <section>
+
+            <div class="justify-content-start" id="adventureBtn">
+
+                <a href="#about"> <button class="btn btn-primary">Click for more</button></a>
+
+            </div>
+
+        </section>
+
+        <div class="container">
+
+            <div class="row my-xl-5">
+
+                <div class="col mx-auto">
+
+                    <p></p>
+
+                    <h2 class="text-white text-uppercase myHeadingShadow">Bringing a fresh perspective</h2>
+
+                    <ul style="list-style-type: none;" class="text-white-50 text-uppercase">
+
+                        <li style="padding: 0.5em;" class="">Strong technical background</li>
+
+                        <li style="padding: 0.5em;" class="">Involved</li>
+
+                        <li style="padding: 0.5em;" class="">Willing to go the extra mile</li>
+
+                        <li style="padding: 0.5em;" class="">Not just a number in a database</li>
+
+                    </ul>
+                    <div class="row justify-content-between">
+                        <div class="col-sm-4 text-justify">
+                            <p class="text-white">
+
+                                Ultimately I want to code. As most lifelong students, I'm not sure what I don't know
+
+                                at this point and would like to expand my skillset. I feel I would be better suited to
+                                backend
+
+                                work for the simple fact that creating UI/UX isn't my strong suit. If you feel I might
+                                be able
+
+                                to contribute to your team while gaining valuable experience, please reach out to me.
+
+
+
+                            </p>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <br />
+                            <p class="text-white text-justify">
+
+                                I'm interested in creating something that will benefit the world. That might be writing
+                                one
+
+                                block of code that contributed to your project, influencing one person that may
+
+                                go on to do great things or just sharing a coffee with someone that needs to work
+                                through
+
+                                a problem.
+
+                            </p>
+                        </div>
+
+                        <div class="col-sm-4 text-justify">
+                            <br />
+                            <br />
+                            <p class="text-white">
+
+                                In my free time I enjoy all things outdoors. My family and I enjoy camping, hiking,
+
+                                backpacking, traveling to new places and experiencing everything this world has to
+                                offer. I've traveled all over the world, but I still have so much to left to explore.
+
+                            </p>
+                        </div>
+
+
+                    </div>
+                    <div id="knowledge">
+                        <h2 class="text-white text-uppercase myShadow">Technologies I'm working with</h2>
+                        <p></p>
+                    </div>
+                    <!-- start cards -->
+                    <div id="knowledgeTest">
+                        <!-- language cards -->
+                        <div id="language" class="container toggleMeTwo">
+                            <div class="row justify-content-around">
+                                <!-- WebDev card -->
+                                <div class="col-md-4 col-lg-3">
+                                    <div class="card tech">
+                                        <img src="./assets/Front-end-logo-color.png"
+                                            class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
+                                            alt="Front End Logo">
+                                        <div class="card-body">
+                                            <h5 class="card-title align-center">Front End</h5>
+                                            <hr />
+                                            <p class="card-text">I can use HTML, CSS and jQuery to create pleasent web
+                                                interfaces. I can write my own code and easily modify existing code.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- python card -->
+                                <div id="python" class="col-md-4 col-lg-3">
+                                    <div class="card tech">
+                                        <img src="./assets/Python.svg.png"
+                                            class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
+                                            alt="Python Logo">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Python</h5>
+                                            <hr />
+                                            <p class="card-text">I can read code, make simple modifications and follow
+                                                documentation. Writing my own code is time consuming.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Java card -->
+                                <div class="col-md-4 col-lg-3">
+                                    <div class="card tech">
+                                        <img src="./assets/Java-logo.png"
+                                            class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
+                                            alt="Java Logo">
+                                        <div class="card-body">
+                                            <h5 class="card-title">JAVA</h5>
+                                            <hr />
+                                            <p class="card-text">I can read, modify and maintain existing code if it is
+                                                properly documented. Writing my own code is time consuming.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- JavaScript card -->
+                                <div class="col-md-4 col-lg-3">
+                                    <div class="card tech">
+                                        <img src="./assets/js.png"
+                                            class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
+                                            alt="JavaScript logo">
+                                        <div class="card-body">
+                                            <h5 class="card-title">JavaScript</h5>
+                                            <hr />
+                                            <p class="card-text">I am capable of creating complex algorithms, implement
+                                                existing pacakges, creating my own packages and using JavaScript to
+                                                enhance
+                                                web page design.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- framework cards -->
+                        <div id="framework" class="container toggleMeTwo">
+                            <div class="row justify-content-around">
+                                <!-- SQL card -->
+                                <div class="col-md-4 col-lg-3">
+                                    <div class="card tech">
+                                        <img src="./assets/SQL.png"
+                                            class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
+                                            alt="JavaScript logo">
+                                        <div class="card-body">
+                                            <h5 class="card-title">SQL</h5>
+                                            <hr />
+                                            <p class="card-text">I can use SQL statements to access, manipulate and
+                                                modify
+                                                database information. I can generally maintain existing code, but I am
+                                                not currently capable of administering or securing a database in its
+                                                entirety.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- bootstrap card -->
+                                <div id="" class="col-md-4 col-lg-3">
+                                    <div class="card tech">
+                                        <img src="./assets/bootstrap.png"
+                                            class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
+                                            alt="Bootstrap logo">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Bootstrap</h5>
+                                            <hr />
+                                            <p class="card-text">I can create pleasant user interfaces with Bootstrap.
+                                                This
+                                                page was created using Bootstrap!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- react card -->
+                                <div class="col-md-4 col-lg-3">
+                                    <div class="card tech">
+                                        <img src="./assets/React.png"
+                                            class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
+                                            alt="React Logo">
+                                        <div class="card-body">
+                                            <h5 class="card-title">React</h5>
+                                            <hr />
+                                            <p class="card-text">Can create simple React web applications and create
+                                                React
+                                                components. I still need more work with React routers and web hooks. May
+                                                need help troubleshooting bugs.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- vue card -->
+                                <div class="col-md-4 col-lg-3">
+                                    <div class="card tech">
+                                        <img src="./assets/Vue_js_logo.png"
+                                            class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
+                                            alt="VueJS Logo">
+                                        <div class="card-body">
+                                            <h5 class="card-title">VueJS</h5>
+                                            <hr />
+                                            <p class="card-text">Can implement existing HTML documents into VueJS web
+                                                applications, create new applications and modify existing code. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center" style="margin-bottom: 10px;">
+                            <!-- button for card flips -->
+                            <a name="button" id="frameworksBtn" class="btn btn-primary" href="#knowledge"
+                                role="button">Click to View More</a>
+                        </div>
+
+                    </div>
+                    <!-- end cards -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Projects-->
+
+        <section class="projects-section grad1" id="projects">
+
+            <div class="container" id="projects">
+
+                <p></p>
+
+                <h1 class="text-white mx-auto my-4 text-uppercase">Some of my work</h1>
+
+                <div class="row justify-content-between">
+
+                    <div class="col-sm-4">
+
+                        <a href="http://saenzpardo.com/homework.html" class="myImg" target=" _blank"> <img
+                                class="img-fluid mb-3 mb-lg-0" src="media/homework.PNG" alt="kid's homework page" /></a>
+
+                        <p class="workingOn text-justify"><span class="modal-header">Static HMTL Site</span>I created
+
+                            this webpage
+
+                            during the spring of 2020 when COVID-19 shutdown
+
+                            all schools. I needed a way to keep my children on schedule while encouraging an independent
+
+                            learning environment. I'm still amazed saenzpardo.com was available! (I'm also a bit
+
+                            sarcastic)
+
+                            This page is considered archived and is no longer updated.</p>
+
+                    </div>
+
+                    <div class="col-sm-4 project-images">
+
+                        <a href="http://saenzpardo.com/blog" class="myImg" target=" _blank"> <img
+                                class="img-fluid mb-3 mb-lg-0 project-images" src="media/blog.PNG" alt="my Blog" />
+
+                        </a>
+
+
+
+                        <p class="workingOn text-justify"><span class="modal-header">Blog</span>
+
+                            <bold><em>***</em></bold><br /> I need to work on the React Router here. When I moved the
+
+                            build to a
+
+                            subdirectory, the router still points to root. If you click on the
+
+                            link at the top of the page, you will be redirected to the React build.<br />
+
+                            <bold><em>***</em></bold><br />
+
+                            I created this blog to experiment with a react.js application
+
+                            and enjoyed it. Due to my current schedule, I won't be posting as often but it's still an
+
+                            active page. Check back for my take on learning to program in your late 30s with a family,
+
+                            school
+
+                            and a profressional career.
+
+                        </p>
+
+                    </div>
+
+                    <div class="col-sm-4">
+
+                        <a href="https://github.com/saenzpardo" class="myImg enlarge" target=" _blank"> <img
+                                class="img-fluid mb-3 mb-lg-0" src="media/github.PNG" alt="Github Profile" />
+
+                        </a>
+
+                        <p class="workingOn text-justify"><span class="modal-header">Github Profile</span>I use git for
+
+                            a lot of things now. I almost like it better than OneDrive at times. </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- The Modal/Lightbox -->
+
+        <div id="myModal" class="modal">
+
+
+
+            <div class="modal-content" style="width: 75%; background: darkgray;">
+
+                <span class="closer cursor" onclick="closeModal()">&times;</span>
+
+                <div class="mySlides">
+
+                    <div class="numbertext">1 / 3</div>
+
+                    <img src="media/yellowstone2.jpg" class="modal-contentI" alt="My family at yellowstone">
+
+                </div>
+
+                <div class="mySlides">
+
+                    <div class="numbertext">2 / 3</div>
+
+                    <img src="media/superior.jpg" class="modal-contentI" alt="Backpacking the superior hiking trail">
+
+                </div>
+
+                <div class="mySlides">
+
+                    <div class="numbertext">3 / 3</div>
+
+                    <img src="media/puerto_rico.JPG" class="modal-contentI" alt="My family in Puerto Rico">
+
+                </div>
+
+                <!-- Next/previous controls -->
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Caption text -->
+
+
+
+            </div>
+
+        </div>
+
+        <!-- end modal -->
+
+        <!-- Signup - needs work on the newsletter section -->
+
+        <section class="signup-section" id="signup">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+
+                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+
+                        <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+
+                        <p class="text-white">Newsletter under construction</p>
+
+                        <form class="form-inline d-flex">
+
+                            <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email"
+                                placeholder="Enter email address..." />
+
+                            <button class="btn btn-primary mx-auto" type="submit">Subscribe</button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Contact area-->
+
+        <section class="contact-section bg-black">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-4 mb-3 mb-md-0">
+
+                        <div class="card py-4 h-100">
+
+                            <div class="card-body text-center">
+
+                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+
+                                <h4 class="text-uppercase m-0">Address</h4>
+
+                                <hr class="my-4" />
+
+                                <div class="small text-black-50">Hastings, NE</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 mb-3 mb-md-0">
+
+                        <div class="card py-4 h-100">
+
+                            <div class="card-body text-center">
+
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+
+                                <h4 class="text-uppercase m-0">Email</h4>
+
+                                <hr class="my-4" />
+
+                                <div class="small text-black-50"><a
+                                        href="mailto:saenzpardoa@gmail.com">saenzpardoa@gmail.com</a></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 mb-3 mb-md-0">
+
+                        <div class="card py-4 h-100">
+
+                            <div class="card-body text-center">
+
+                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+
+                                <h4 class="text-uppercase m-0">Phone</h4>
+
+                                <hr class="my-4" />
+
+                                <div class="small text-black-50">+1 (402) 834-3765</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="social d-flex justify-content-center">
+
+                    <a class="mx-2" target="_blank" href="https://twitter.com/Saenzpardo4"><i
+                            class="fab fa-twitter"></i></a>
+
+                    <a class="mx-2" target="_blank" href="https://www.facebook.com/adam.saenzpardo"><i
+                            class="fab fa-facebook-f"></i></a>
+
+                    <a class="mx-2" target="_blank" href="https://www.linkedin.com/in/adam-saenzpardo-7009721b0/"><i
+                            class="fab fa-linkedin"></i></a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Footer-->
+
+        <footer class="footer bg-black small text-center text-white-50">
+
+            <div class="container">Copyright &copy; Saenzpardo.com 2020 | Picture of Cliffs of Moher was taken on my
+
+                honeymoom - not a stock photo</div>
+
+            <div class="container"><a href="assets/Jesus-Adam-Saenzpardo.pdf" target=" _blank">Resume</a></div>
+
+        </footer>
+
+        <!-- Bootstrap core JS-->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+
+
+        <!-- Third party plugin JS-->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+        <!-- Core theme JS-->
+
+        <script src="js/scripts.js"></script>
+
+        <!-- jQuery for cards-->
+        <script>
+            $(document).ready(function () {
+
+
+
+
+            });
+        </script>
+
+        <!-- Modal Script -->
+        <script>
+
+            // Open the Modal
+
+            function openModal() {
+
+                document.getElementById("myModal").style.display = "block";
+
+            }
+
+
+
+            // Close the Modal
+
+            function closeModal() {
+
+                document.getElementById("myModal").style.display = "none";
+
+            }
+
+
+
+            var slideIndex = 1;
+
+            showSlides(slideIndex);
+
+
+
+            // Next/previous controls
+
+            function plusSlides(n) {
+
+                showSlides(slideIndex += n);
+
+            }
+
+
+
+            // Thumbnail image controls
+
+            function currentSlide(n) {
+
+                showSlides(slideIndex = n);
+
+            }
+
+
+
+            function showSlides(n) {
+
+                var i;
+
+                var slides = document.getElementsByClassName("mySlides");
+
+                var dots = document.getElementsByClassName("demo");
+
+                var captionText = document.getElementById("caption");
+
+                if (n > slides.length) { slideIndex = 1 }
+
+                if (n < 1) { slideIndex = slides.length }
+
+                for (i = 0; i < slides.length; i++) {
+
+                    slides[i].style.display = "none";
+
+                }
+
+                for (i = 0; i < dots.length; i++) {
+
+                    dots[i].className = dots[i].className.replace(" active", "");
+
+                }
+
+                slides[slideIndex - 1].style.display = "block";
+
+                dots[slideIndex - 1].className += " active";
+
+                captionText.innerHTML = dots[slideIndex - 1].alt;
+
+            }
+
+            /*
+                Code for graph
+            */
+
+
+        </script>
+
+        <!-- My jQuery Scripts -->
+
+
+        <script>
+
+            $(document).ready(function () {
+
+                // click toggle andventure/business photos
+                $("div#adventure").hide();
+                $("#adventureBtn").click(function () {
+                    $("div.toggleMe").toggle();
+                });
+
+                // toggle frameworks/languages
+                $("#framework").hide();
+                $("#frameworksBtn").click(function () {
+                    $("div.toggleMeTwo").toggle();
+                })
+
+                // change color of knowledge cards
+                $('.tech').css('background-color', 'darkgray');
+                $('.tech').mouseenter(function () {
+                    $(this).css('background-color', 'lightgray');
+                    $(this).css('color', 'black');
+                    $(this).css('box-shadow', '5px 5px 10px lightgreen');
+
+                });
+                $('.tech').mouseleave(function () {
+                    $(this).css('background-color', 'darkgray');
+                    $(this).css('box-shadow', 'none');
+
+                });
+
+
+                // dim main photos on mouseover
+                $('.shad').mouseenter(function () {
+                    $(this).css('opacity', '0.7');
+                });
+                $('.shad').mouseleave(function () {
+                    $(this).css('opacity', '1.0');
+                });
+
+                // change cursor on hover for modal active photos
+                $('.modalin').mouseenter(function () {
+                    $(this).css('cursor', 'pointer');
+                });
+                $('.modalin').mouseleave(function () {
+                    $(this).css('cursor', 'default');
+                });
+
+
+
+                /*
+
+                Modal is not necessary in tablet or mobile view
+
+                code below removes modal when in mobile, or 
+
+                if resized below 768 pixels.                
+
+                */
+
+                var width = $(window).width();
+
+                // detach if loaded in mobile
+
+                if (width <= 768) {
+
+                    $('#myModal').detach();
+
+                    $('img.shad').addClass('hover-shadow');
+
+                };
+
+                // detach if resized below 768 px
+
+                $(window).on("load resize", function () {
+
+                    if (width <= 768) {
+
+                        $('#myModal').detach();
+
+                    };
+
+                });
+
+            });
+
+
+        </script>
+
+</body>
+
+<!--
+
+    NOTES:
+
+    all done
+
+-->
+
+</html>

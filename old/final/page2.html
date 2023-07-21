@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 
+           _
+       .__(.)< (MEOW)
+        \___)   
+ ~~~~~~~~~~~~~~~~~~
+    INFO-1500 semester project 
+    Author: J. Adam Saenzpardo
+    Date: March 15, 2020
+    
+    4/10/2020 - added print style sheet
+
+    page2.html
+    -->
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale-1" name="viewport" />
+    <title>New Technologies</title>
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/layout.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/print.css" rel="stylesheet" media="print" />
+    <link href="css/mobile.css" rel="stylesheet" />
+    <script src="js/main.js"></script>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+        // mobile menu script
+        function myFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Mobile Navigation Menu -->
+    <div class="topnav">
+    <a href="index.html" class="active">Home</a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+        <a href="page2.html">New Tech</a>
+        <a href="page2.html">New Tech</a>
+        <a href="page3.html">Web Browsers</a>
+        <a href="page4.html">The Future</a>
+        <a href="about.html">About</a>
+        <br />
+        <a href="mailto:jesus93761@cccneb.edu">Contact Me</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+    </div>
+    <main>
+        <header>
+            <nav id="topLinks"> <a href="about.html">About</a> | <a href="mailto:jesus93761@cccneb.edu">Contact Me</a></nav>
+            <a href="index.html"><img src="media/banner1.png" alt="The Modern Web" /></a>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="page3.html">Web Browsers</a></li>
+                    <li><a href="page4.html">The Future</a></li>
+                </ul>
+            </nav>
+            <h1>The Impact of New Technologies on Web Development</h1>
+        </header>
+        <article>
+            <h1>Artificial Intelligence</h1>
+            <img class="topPic" width="300" src="media/machine_l.jpg" alt="Machine Learning" />
+
+            <h2>General Information</h2>
+            <p>Artificial intelligence is a way of training software over a series of “examples.” These examples can be statistical models, pictures, videos, text or emotional behavioral responses. First a training data set is used, and the algorithm developed.
+                A collection of raw data is input and processed. The accuracy of the processed data is based on the scope of the training data and the complexity of the algorithm. </p>
+
+            <iframe class="video" width="300" height="240" src="https://www.youtube.com/embed/z-EtmaFJieY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2>Life Cycle</h2>
+            <p>Ideas of artificial intelligence have most likely been around even before computers existed. Imagine a mill worker performing mundane tasks that the worker dreamed could be simplified by automation. If only the machine could think on its own!
+                First accepted as a discipline in 1955, it has grown to become a popular field of study.</p>
+            <h2>Improvement</h2>
+            <p>In May 1997 the artificial intelligence computer “Deep Blue” (pictured below) became the first computer known to man that was able to defeat a world champion chess player.2 This was considered a great achievement in the advancement of machine
+                learning.
+            </p>
+            <img class="round" src="media/deep_blue.jpg" alt="Deep Blue" />
+            <h2>Features</h2>
+            <p>It has developed more accurate weather models, developed protein synthesis models used in bio-medical engineering, created more fuel efficient vehicles, increased manufacturing efficiency, predicted economics statistics and presidential election
+                outcomes. Created autonomous vehicles and unmanned military aircraft, the list truly goes on and on. A lot people might not realize the ergonomics of an expensive office chair may have been designed based on predictions from artificial
+                intelligence. </p>
+            <h2>Evolution</h2>
+            <p>Artificial intelligence/machine learning will continue to become more popular. The programming involved does not require intimate knowledge of computer science or engineering. The most important piece of the puzzle comes from </p>
+            
+            <hr>
+            <h1>.MOV Extenstions</h1>
+            <img class="topPic" width="200" src="media/mov.jpg" alt="MOV Extensions" />
+            <h2>General Information</h2>
+            <p>A MOV file is a common multimedia container filer format developed by Apple and compatible with both Macintosh and Windows platforms. It can be used to store text, audio and video. The file hierarchy makes QuickTime very efficient at editing.
+                MOV files commonly use the MPEG-4 codec for compression. A file with the MOV file extension is an Apple QuickTime Movie file that’s stored in a QuickTime File Format (QTFF) container file. Although, QuickTime and MP4 use the same MPEG-4
+                formats, MP4 has much more support. Many hardware devices do not contain software allowing them to parse the QTFF data. </p>
+            <iframe class="video" width="300" height="240" src="https://www.youtube.com/embed/hvgxn8v--8Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2>Life Cycle</h2>
+            <p>Apple released the .mov file format in 1998, and although it has declined in popularity, it is used by media creators. Due to its proprietary license, it’s capabilities cannot be enhance by the open source community. It is a powerful cross
+                platform format supporting multiple codecs that should be understood by media creators. </p>
+            <h2>Improvement</h2>
+            <p>While Apple's QuickTime player continues to improve, I was unable to find planned improvements for the .MOV container. </p>
+            <h2>Features</h2>
+            <p>.MOV features include variable bit/frame rates, user of chapters, metadata, interactive menus, streaming capabilities, attachments, 3D capabilities and hardware players. An added benefit of .MOV files is editing the file without rewriting
+                the entire file increasing efficiency. A video below explains different video file formats. </p>
+            <h2>Evolution</h2>
+            <p>While older versions of Quicktime is considered deprecated, the .MOV extension is popular among developers. I believe this popularity will continue and final formats will be converted to container files that are better supported. </p>
+            <br />
+            <br />
+        </article>
+        <footer>
+            Authored by: Adam Saenzpardo | Hastings, NE 68901 | Central Nebraska Community College<br /><br /> Edited: 4/22/2020
+        </footer>
+    </main>
+</body>
+
+</html>

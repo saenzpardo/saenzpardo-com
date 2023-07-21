@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+   about.html
+   -->
+   
+   <meta charset="utf-8" />
+   <title></title>
+   <link href="../css/tb_reset.css" rel="stylesheet" />
+   <link href="../css/tb_styles1.css" rel="stylesheet" />  
+   <link href="../css/tb_visual1.css" rel="stylesheet" />       
+</head>
+
+<body>
+   <header>
+      <nav id="topLinks">
+         <a href="/pages/about_console_style.html">About</a> | 
+         <a href="mailto:jesus93761@cccneb.edu">Contact Me</a>
+      </nav>
+      
+      <nav class="horizontal" id="mainLinks">
+         <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="/pages/info1500.html">INFO-1500</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="/pages/java.html">JAVA Snippets</a></li>            
+         </ul>
+      </nav>
+   </header>
+   
+ 
+   <article>
+      <header>
+         <h1>JAVA Snippets</h1>
+		 
+        
+        
+      </header>
+      
+      <section id="leftColumn">
+<pre><code>if (GPA < 4.0) {
+            study++;
+        } else {
+            relax++;
+        }</code></pre>
+         <p></p> 
+        
+         
+         <p>Authoring Assistant</p>
+         
+             <!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">java.util.Scanner</span><span style="color: #f92672">;</span>
+
+<span style="color: #66d9ef">public</span> <span style="color: #66d9ef">class</span> <span style="color: #a6e22e">AuthoringAssistant</span> <span style="color: #f92672">{</span>
+   
+   <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">static</span> <span style="color: #66d9ef">void</span> <span style="color: #a6e22e">printMenu</span><span style="color: #f92672">()</span> <span style="color: #f92672">{</span> <span style="color: #75715e">// printMenu method       </span>
+	       <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;MENU&quot;</span><span style="color: #f92672">);</span>
+	       <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;c - Number of non-whitespace characters&quot;</span><span style="color: #f92672">);</span>       
+	       <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;w - Number of words&quot;</span><span style="color: #f92672">);</span>
+	       <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;f - Find text&quot;</span><span style="color: #f92672">);</span>
+	       <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;r - Replace all !&#39;s&quot;</span><span style="color: #f92672">);</span>
+	       <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;s - Shorten spaces&quot;</span><span style="color: #f92672">);</span>
+	       <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;q - Quit&quot;</span><span style="color: #f92672">);</span>  
+	       <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">();</span>
+	       <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;Choose an option:&quot;</span><span style="color: #f92672">);</span>
+	   <span style="color: #f92672">}</span><span style="color: #75715e">// printMenu method</span>
+	   
+	   <span style="color: #75715e">// get number of characters that are not whitespace</span>
+	   <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">static</span> <span style="color: #66d9ef">int</span> <span style="color: #a6e22e">getNumOfNonWSCharacters</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">String</span> <span style="color: #f8f8f2">inputString</span><span style="color: #f92672">){</span> 
+	      <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">total</span><span style="color: #f92672">;</span>	      
+	      <span style="color: #75715e">// remove spaces and count total characters</span>
+	      <span style="color: #f8f8f2">total</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">inputString</span><span style="color: #f92672">.</span><span style="color: #a6e22e">replace</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot; &quot;</span><span style="color: #f92672">,</span> <span style="color: #e6db74">&quot;&quot;</span><span style="color: #f92672">).</span><span style="color: #a6e22e">length</span><span style="color: #f92672">();</span>	    	      	  
+	      <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">total</span><span style="color: #f92672">;</span>	    
+	   <span style="color: #f92672">}</span><span style="color: #75715e">// end getNumOfNonWSCharacters method</span>
+	   
+	   <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">static</span> <span style="color: #66d9ef">int</span> <span style="color: #a6e22e">getNumOfWords</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">String</span> <span style="color: #f8f8f2">inputString</span><span style="color: #f92672">)</span> <span style="color: #f92672">{</span><span style="color: #75715e">// get number of words</span>
+		  <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">count</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f92672">;</span>
+		  <span style="color: #75715e">// store string into an array using space as delimiter</span>
+		  <span style="color: #f8f8f2">String</span> <span style="color: #f8f8f2">myString</span><span style="color: #f92672">[]</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">inputString</span><span style="color: #f92672">.</span><span style="color: #a6e22e">split</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;\\s+&quot;</span><span style="color: #f92672">);</span>
+		  <span style="color: #66d9ef">for</span> <span style="color: #f92672">(</span><span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f92672">;</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">&lt;</span> <span style="color: #f8f8f2">myString</span><span style="color: #f92672">.</span><span style="color: #a6e22e">length</span><span style="color: #f92672">;</span> <span style="color: #f92672">++</span><span style="color: #f8f8f2">i</span><span style="color: #f92672">)</span> <span style="color: #f92672">{</span>
+			  <span style="color: #f8f8f2">count</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">+</span> <span style="color: #ae81ff">1</span><span style="color: #f92672">;</span>
+		  <span style="color: #f92672">}</span><span style="color: #75715e">// end for loop</span>
+			  <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">count</span><span style="color: #f92672">;</span>
+	   <span style="color: #f92672">}</span><span style="color: #75715e">// end getNumOfWords method</span>
+	   	   
+	   <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">static</span> <span style="color: #66d9ef">int</span> <span style="color: #a6e22e">findText</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">String</span> <span style="color: #f8f8f2">searchWords</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">String</span> <span style="color: #f8f8f2">inputString</span><span style="color: #f92672">)</span> <span style="color: #f92672">{</span><span style="color: #75715e">// finally works with phrase!</span>
+		   <span style="color: #75715e">// variables</span>
+		   <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">count</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f92672">;</span>
+		   <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">found</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f92672">;</span>
+		   
+		   <span style="color: #66d9ef">while</span> <span style="color: #f92672">((</span><span style="color: #f8f8f2">found</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">inputString</span><span style="color: #f92672">.</span><span style="color: #a6e22e">indexOf</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">searchWords</span><span style="color: #f92672">))</span> <span style="color: #f92672">!=</span> <span style="color: #f92672">-</span><span style="color: #ae81ff">1</span> <span style="color: #f92672">){</span>
+			  <span style="color: #f8f8f2">inputString</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">inputString</span><span style="color: #f92672">.</span><span style="color: #a6e22e">substring</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">found</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">searchWords</span><span style="color: #f92672">.</span><span style="color: #a6e22e">length</span><span style="color: #f92672">());</span>
+			  <span style="color: #f92672">++</span><span style="color: #f8f8f2">count</span><span style="color: #f92672">;</span>
+		   <span style="color: #f92672">}</span><span style="color: #75715e">// end while loop</span>
+		   <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">count</span><span style="color: #f92672">;</span>
+	   <span style="color: #f92672">}</span><span style="color: #75715e">// end findText method</span>
+	   
+	   <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">static</span> <span style="color: #f8f8f2">String</span> <span style="color: #a6e22e">replaceExclamation</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">String</span> <span style="color: #f8f8f2">inputStr</span><span style="color: #f92672">){</span><span style="color: #75715e">// replace explanation points method		   </span>
+		   <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">inputStr</span><span style="color: #f92672">.</span><span style="color: #a6e22e">replaceAll</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;!&quot;</span><span style="color: #f92672">,</span> <span style="color: #e6db74">&quot;.&quot;</span><span style="color: #f92672">);</span>	      
+	   <span style="color: #f92672">}</span><span style="color: #75715e">// end replaceExclamation points method</span>
+	   
+	   <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">static</span> <span style="color: #f8f8f2">String</span> <span style="color: #a6e22e">shortenSpace</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">String</span> <span style="color: #f8f8f2">inputStr</span><span style="color: #f92672">){</span><span style="color: #75715e">// shorten space</span>
+	      <span style="color: #f8f8f2">String</span> <span style="color: #f8f8f2">inputString</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">inputStr</span><span style="color: #f92672">.</span><span style="color: #a6e22e">replaceAll</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;\\s+&quot;</span><span style="color: #f92672">,</span> <span style="color: #e6db74">&quot; &quot;</span><span style="color: #f92672">);</span>
+	      <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">inputString</span><span style="color: #f92672">;</span>
+	   <span style="color: #f92672">}</span><span style="color: #75715e">// end shortenSpace method</span>
+	   
+	   <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">static</span> <span style="color: #66d9ef">void</span> <span style="color: #a6e22e">main</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">String</span><span style="color: #f92672">[]</span> <span style="color: #f8f8f2">args</span><span style="color: #f92672">)</span> <span style="color: #f92672">{</span>
+		  <span style="color: #75715e">// initialize scanner</span>
+	      <span style="color: #f8f8f2">Scanner</span> <span style="color: #f8f8f2">scnr</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">new</span> <span style="color: #f8f8f2">Scanner</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">in</span><span style="color: #f92672">);</span>
+	            
+	      <span style="color: #75715e">// declare variables</span>
+	      <span style="color: #f8f8f2">String</span> <span style="color: #f8f8f2">inputStr</span><span style="color: #f92672">;</span>
+	      <span style="color: #f8f8f2">String</span> <span style="color: #f8f8f2">search</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot; &quot;</span><span style="color: #f92672">;</span>
+	      <span style="color: #66d9ef">char</span> <span style="color: #f8f8f2">inputChar</span><span style="color: #f92672">;</span>
+	      <span style="color: #66d9ef">boolean</span> <span style="color: #f8f8f2">active</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">true</span><span style="color: #f92672">;</span>
+	      
+	      <span style="color: #75715e">// get user input</span>
+	      <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;Enter a sample text:&quot;</span><span style="color: #f92672">);</span>
+	      <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">();</span>
+	      <span style="color: #f8f8f2">inputStr</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">scnr</span><span style="color: #f92672">.</span><span style="color: #a6e22e">nextLine</span><span style="color: #f92672">();</span>
+	      
+	      <span style="color: #75715e">// display user input</span>
+	      <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;You entered: &quot;</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">inputStr</span><span style="color: #f92672">);</span>
+	      <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">();</span>
+	      
+	      <span style="color: #75715e">// initialize while block to keep program running</span>
+	      <span style="color: #66d9ef">while</span> <span style="color: #f92672">(</span><span style="color: #f8f8f2">active</span><span style="color: #f92672">)</span> <span style="color: #f92672">{</span>
+	         
+	      <span style="color: #f8f8f2">printMenu</span><span style="color: #f92672">();</span> <span style="color: #75715e">// call menu method</span>
+	      <span style="color: #f8f8f2">inputChar</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">scnr</span><span style="color: #f92672">.</span><span style="color: #a6e22e">next</span><span style="color: #f92672">().</span><span style="color: #a6e22e">charAt</span><span style="color: #f92672">(</span><span style="color: #ae81ff">0</span><span style="color: #f92672">);</span> <span style="color: #75715e">// take user input for menu</span>
+	      
+	      <span style="color: #66d9ef">if</span> <span style="color: #f92672">(</span><span style="color: #f8f8f2">inputChar</span> <span style="color: #f92672">==</span> <span style="color: #e6db74">&#39;q&#39;</span><span style="color: #f92672">)</span> <span style="color: #f92672">{</span><span style="color: #75715e">// quit</span>
+	         <span style="color: #f8f8f2">active</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">false</span><span style="color: #f92672">;</span>  
+	      <span style="color: #f92672">}</span> <span style="color: #66d9ef">else</span> <span style="color: #66d9ef">if</span> <span style="color: #f92672">(</span><span style="color: #f8f8f2">inputChar</span> <span style="color: #f92672">==</span> <span style="color: #e6db74">&#39;c&#39;</span><span style="color: #f92672">)</span> <span style="color: #f92672">{</span><span style="color: #75715e">// count non-whitespace characters	</span>
+	     	  <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;Number of non-whitespace characters: &quot;</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">getNumOfNonWSCharacters</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">inputStr</span><span style="color: #f92672">));</span> 
+	    	  <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">();</span>
+	      <span style="color: #f92672">}</span> <span style="color: #66d9ef">else</span> <span style="color: #66d9ef">if</span> <span style="color: #f92672">(</span><span style="color: #f8f8f2">inputChar</span> <span style="color: #f92672">==</span> <span style="color: #e6db74">&#39;w&#39;</span><span style="color: #f92672">)</span> <span style="color: #f92672">{</span><span style="color: #75715e">// word counter</span>
+	          <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;Number of words: &quot;</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">getNumOfWords</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">inputStr</span><span style="color: #f92672">));</span>  
+	          <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">();</span>
+	      <span style="color: #f92672">}</span> <span style="color: #66d9ef">else</span> <span style="color: #66d9ef">if</span> <span style="color: #f92672">(</span><span style="color: #f8f8f2">inputChar</span> <span style="color: #f92672">==</span> <span style="color: #e6db74">&#39;f&#39;</span><span style="color: #f92672">)</span> <span style="color: #f92672">{</span><span style="color: #75715e">// find text	        </span>
+	    	   <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;Enter a word or phrase to be found:&quot;</span><span style="color: #f92672">);</span>
+	    	 <span style="color: #75715e">/*</span>
+<span style="color: #75715e">	    	   I&#39;m not sure why I needed to add the &quot;test = scnr.nextLine();&quot;</span>
+<span style="color: #75715e">	    	   It seems the /n character was consuming my &quot;search = scnr.nextLine();&quot;</span>
+<span style="color: #75715e">	    	 	I ended up adding the test = scnr.nextLine(); to get user input...</span>
+<span style="color: #75715e">	    	 	I&#39;ll read more on this later.	    	   </span>
+<span style="color: #75715e">	    	  */</span>
+	    	    <span style="color: #f8f8f2">String</span> <span style="color: #f8f8f2">test</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">scnr</span><span style="color: #f92672">.</span><span style="color: #a6e22e">nextLine</span><span style="color: #f92672">();</span> <span style="color: #75715e">// consume /n character</span>
+	          <span style="color: #f8f8f2">search</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">scnr</span><span style="color: #f92672">.</span><span style="color: #a6e22e">nextLine</span><span style="color: #f92672">();</span> <span style="color: #75715e">// actual user input</span>
+	          <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;\&quot;&quot;</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">search</span> <span style="color: #f92672">+</span> <span style="color: #e6db74">&quot;\&quot;&quot;</span> <span style="color: #f92672">+</span> <span style="color: #e6db74">&quot; instances: &quot;</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">findText</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">search</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">inputStr</span><span style="color: #f92672">));</span>
+	          <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">();</span>
+	      <span style="color: #f92672">}</span> <span style="color: #66d9ef">else</span> <span style="color: #66d9ef">if</span> <span style="color: #f92672">(</span><span style="color: #f8f8f2">inputChar</span> <span style="color: #f92672">==</span> <span style="color: #e6db74">&#39;r&#39;</span><span style="color: #f92672">)</span> <span style="color: #f92672">{</span><span style="color: #75715e">// replace exclamation point</span>
+	    	   <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;Edited text: &quot;</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">replaceExclamation</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">inputStr</span><span style="color: #f92672">));</span>
+	    	  <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">();</span>
+	      <span style="color: #f92672">}</span> <span style="color: #66d9ef">else</span> <span style="color: #66d9ef">if</span> <span style="color: #f92672">(</span><span style="color: #f8f8f2">inputChar</span> <span style="color: #f92672">==</span> <span style="color: #e6db74">&#39;s&#39;</span><span style="color: #f92672">)</span> <span style="color: #f92672">{</span><span style="color: #75715e">// shorten space</span>
+	         <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;Edited text: &quot;</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">shortenSpace</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">inputStr</span><span style="color: #f92672">));</span>	      
+	         <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">();</span>
+	      <span style="color: #f92672">}</span><span style="color: #75715e">// end if-else-if block       </span>
+	      <span style="color: #f92672">}</span><span style="color: #75715e">// end while block  </span>
+	<span style="color: #f92672">}</span><span style="color: #75715e">// end main</span>
+<span style="color: #f92672">}</span><span style="color: #75715e">// end authoring assistant class</span>
+</pre></div>
+
+
+        
+      </section>
+     <!-- 
+      <aside>
+ this is a quote generator script
+      <script type ="text/javascript"
+          src="https://www.brainyquote.com/link/quotebr.js"></script>
+          <small><i><a
+              href="com.brainyquote.url.CreateUrl@9de9cd2"
+              target="_blank" rel="nofollow">more Quotes
+          </a></i></small>
+         
+       <nav id="familyLinks">
+            <h1>Family Links</h1>
+            <ul>
+               <li><a href="#">Family Tree</a></li>               
+               <li><a href="#">Scrapbook</a></li>
+               <li><a href="#">Timeline</a></li>
+               <li><a href="#">Message Board</a></li>
+               <li><a href="#">Extended Family</a></li>
+               <li class="newGroup"><a href="tb_genta.html">Genta (1938 - 2011)</a><li>
+               <li><a href="tb_mika.html">Mika (b. 1943)</a></li>
+               <li><a href="tb_ikko.html">Ikko (b. 1969)</a></li>
+               <li><a href="tb_suzuko.html">Suzuko (Endo) (b. 1973)</a></li>
+               <li><a href="tb_hiroji.html">Hiroji (b. 2003)</a></li>   
+            </ul>
+         </nav> 
+      </aside>
+      -->
+   </article>   
+ 
+   
+   <footer>
+      
+      <section>By: Adam Saenzpardo</section>
+   </footer>
+   
+</body>
+</html>

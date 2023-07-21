@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <!-- 
+
+           _
+
+       .__(.)< (MEOW)
+
+        \___)   
+
+ ~~~~~~~~~~~~~~~~~~
+
+    INFO-1500 semester project 
+
+    Author: J. Adam Saenzpardo
+
+    Date: March 15, 2020
+
+    
+
+    4/10/2020 - added print style sheet
+
+
+
+    page3.html
+
+    -->
+
+    <meta charset="utf-8" />
+
+    
+
+    <meta content="width=device-width, initial-scale-1" name="viewport" />
+
+    <title>About Adam</title>
+
+    <link href="css/reset.css" rel="stylesheet" />
+
+    <link href="css/layout.css" rel="stylesheet" />
+
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <link href="css/print.css" rel="stylesheet" media="print" />
+
+    <link href="css/mobile.css" rel="stylesheet" />
+
+    <script src="js/main.js"></script>
+
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+
+        //Get the button:
+
+        mybutton = document.getElementById("myBtn");
+
+
+
+        // When the user scrolls down 20px from the top of the document, show the button
+
+        window.onscroll = function() {
+
+            scrollFunction()
+
+        };
+
+
+
+        function scrollFunction() {
+
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+
+                mybutton.style.display = "block";
+
+            } else {
+
+                mybutton.style.display = "none";
+
+            }
+
+        }
+
+
+
+        // When the user clicks on the button, scroll to the top of the document
+
+        function topFunction() {
+
+            document.body.scrollTop = 0; // For Safari
+
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+
+        }
+
+
+
+        // mobile menu script
+
+        function myFunction() {
+
+            document.body.scrollTop = 0;
+
+            document.documentElement.scrollTop = 0;
+
+            var x = document.getElementById("myLinks");
+
+            if (x.style.display === "block") {
+
+                x.style.display = "none";
+
+            } else {
+
+                x.style.display = "block";
+
+            }
+
+        }
+
+    </script>
+
+
+
+</head>
+
+
+
+<body>
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <!-- Mobile Navigation Menu -->
+
+    <div class="topnav">
+
+    <a href="index.html" class="active">Home</a>
+
+    <!-- Navigation links (hidden by default) -->
+
+    <div id="myLinks">
+
+        <a href="page2.html">New Tech</a>
+
+        <a href="page2.html">New Tech</a>
+
+        <a href="page3.html">Web Browsers</a>
+
+        <a href="page4.html">The Future</a>
+
+        <a href="about.html">About</a>
+
+        <br />
+
+        <a href="mailto:jesus93761@cccneb.edu">Contact Me</a>
+
+    </div>
+
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+
+        <i class="fa fa-bars"></i>
+
+    </a>
+
+    </div>
+
+    <main>
+
+        <header>
+
+            <nav id="topLinks"> <a href="about.html">About</a> | <a href="mailto:jesus93761@cccneb.edu">Contact Me</a>
+
+            </nav>
+
+            <a href="index.html"><img src="media/banner1.png" alt="The Modern Web" /></a>
+
+            <nav class="navigation">
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="page2.html">New Tech</a></li>
+
+                    <li><a href="page4.html">The Future</a></li>
+
+                </ul>
+
+            </nav>
+
+            <h1>About Adam</h1>
+
+
+
+            <article>
+
+                <br />
+
+                <h2>Learning through experience</h2>
+
+                <div class="text">
+
+                    <p>I hope you found the site informative and interesting. It was quite a learning experience for me! Please contact me if you find any errors or any ideas for improvement. Thank you.</p>
+
+                    <br />
+
+                    <hr>
+
+                    <p>I added a style sheet to format printing and a style sheet for mobile view on April 12, 2020.  Please contact me with any issues when viewing this site with the device you are using.</p>
+
+                    <br>
+
+                    <hr>
+
+                </div>
+
+
+
+            </article>
+
+        </header>
+
+            <footer>
+
+                Authored by: Adam Saenzpardo | Hastings, NE 68901 | Central Nebraska Community College<br /><br /> Edited: 4/22/2020
+
+            </footer>
+
+    </main>
+
+</body>
+
+
+
+</html>

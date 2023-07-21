@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+    
+    Author: J. Adam Saenzpardo
+    Date:  
+
+    Filename: index.html
+   -->
+   
+	<meta charset="utf-8" />
+	<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+    <META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">
+    <meta content="width=device-width, initial-scale-1" name="viewport" />
+	<title>Home Work</title>
+	<link href="homework/css/tb_reset.css" rel="stylesheet" />
+	<link href="homework/css/tb_styles1.css" rel="stylesheet" />  
+	<link href="homework/css/tb_visual1.css" rel="stylesheet" /> 
+	<link href="homework/css/tables.css" rel="stylesheet" />
+	<link href="homework/css/mobile.css" rel="stylesheet" />
+	<link href="homework/css/background.css" rel="stylesheet" />
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+        
+        // countdown timer
+
+       var deadline = new Date("may 20, 2020 00:00:00").getTime(); 
+  
+        var x = setInterval(function() { 
+          
+        var now = new Date().getTime(); 
+        var t = deadline - now; 
+        var days = Math.floor(t / (1000 * 60 * 60 * 24)); 
+        var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
+        var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
+        var seconds = Math.floor((t % (1000 * 60)) / 1000); 
+        document.getElementById("day").innerHTML =days ; 
+        document.getElementById("hour").innerHTML =hours; 
+        document.getElementById("minute").innerHTML = minutes;  
+        document.getElementById("second").innerHTML =seconds;  
+        if (t < 0) { 
+            
+            clearInterval(x); 
+            document.getElementById("demo").innerHTML = "TIME UP"; 
+            document.getElementById("day").innerHTML ='0'; 
+            document.getElementById("hour").innerHTML ='0'; 
+            document.getElementById("minute").innerHTML ='0' ;  
+            document.getElementById("second").innerHTML = '0'; } 
+        }, 1000); 
+        
+      
+    </script>
+    
+    <!-- message board -->
+    
+   
+    
+</head>
+<body>
+    
+   <header>
+      <nav id="topLinks">
+         <a href="/pages/abouth.html">About</a> | 
+         <a href="mailto:saenzpardoa@gmail.com">Contact Me</a>
+      </nav>
+      <img class="alcottPic" src="homework/pics/banner1.png" alt="HomeSchool 2020" />
+   </header>
+   
+   
+   
+   <article>
+      <header>
+         <h1>HomeSchooling Schedule</h1>
+         
+      </header>
+      <p>During these crazy times, a lot of pressure has been put on on
+      you to balance work, family time and now teaching your children. </p><br/>
+      <p>I have created this simple site to help my children keep on task
+      and if anyone out there benefits from it, great!  If you would like me
+      to create a simple site tailored to your child's schedule, let me know.  I 
+      will gladly throw something together. (It'll be functional...not impressive)</p><br />
+      <p>Your child's teacher is just as worried as everone else.  Please
+      stay in contact with them.  </p><br />
+      <p>Please contact me with any discovered issues, or if you would like
+      to contribute to the site.</p>
+      <p class="shoutouts">Special thanks to Bre for the banner!</p><br /><br />
+      <header>
+      <h2>Shoutout to my wonderful wife, Katie, for all the help with this craziness!</h2>
+      <h1>1st Grade Schedule</h1>
+      <h2>Subject to change withouth notice</h2>
+      </header>
+      <p><a id="link" href="https://hastingspublicschools.org/schools/alcott-elementary/learning-links/" target="_blank">Alcott Learning Links</a></p>
+      <!--
+      <a href="http://www.saenzpardo.com/TeachTalk">
+      <button onclick="#" id="forum" title="forum">Teacher Forum</button>
+      </a>
+      -->
+      <table class="homework">
+            <caption>All Times Central</caption>
+            <colgroup>
+               <col class="timeColumn" />
+               <col class="wDayColumns" span="5" />
+            </colgroup>
+            <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>Mon</th>
+                  <th>Tue</th>
+                  <th>Wed</th>
+                  <th>Thu</th>
+                  <th>Fri</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <th>8:30</th>
+                  <td class="breakfast" colspan="5">Break Yo' Fast and Make Yo' Bed :)</td>
+               </tr>
+               <tr>
+                  <th>9:00 <br /><br />Online Learing</th>
+				  <td><a id="links" href="http://games.kidzsearch.com/computer/mbigplayer.php?game=s0urceio-ks121714-146000" target="_blank">S0ource.io hackathon</a>
+				  <a id="links" href="https://studio.code.org/sections/FRQTKN" target="_blank">Code.org</a>
+				  <a id="links" href="https://www.splashlearn.com/" target="_blank">Splash Learn DVJOBA</a>
+				  </td>
+				  <td><a id="links" href="http://www.mysteryscience.com/school-closure-planning" target="_blank">Mystery Science</a>
+				  <a id="links" href="https://studio.code.org/sections/FRQTKN" target="_blank">Code.org</a>
+				  <a id="links" href="https://www.splashlearn.com/" target="_blank">Splash Learn DVJOBA</a>
+				  </td>
+				  <td><a id="links" href="https://play.prodigygame.com/" target="_blank">Prodigy</a>
+				  <a id="links" href="https://studio.code.org/sections/FRQTKN" target="_blank">Code.org</a>
+				  <a id="links" href="https://www.splashlearn.com/" target="_blank">Splash Learn DVJOBA</a>
+				  </td>
+				  <td><a id="links" href="https://classroommagazines.scholastic.com/support/learnathome/grades-1-2.html" target="_blank">Scholastic</a>
+				  <a id="links" href="https://studio.code.org/sections/FRQTKN" target="_blank">Code.org</a>
+				  <a id="links" href="https://www.splashlearn.com/" target="_blank">Splash Learn DVJOBA</a>
+				  </td>
+				  <td><a id="links" href="https://archive.org/details/msdos_Oregon_Trail_The_1990" target="_blank">Oregon Trail Game</a>
+				  <a id="links" href="https://studio.code.org/sections/FRQTKN" target="_blank">Code.org</a>
+				  <a id="links" href="https://www.splashlearn.com/" target="_blank">Splash Learn DVJOBA</a>
+				  </td>
+				</tr>
+               <tr>
+                  <th>9:30</th>
+                  <td colspan="5">Read a book</td>
+               </tr>
+               <tr>
+                  <th>10:00</th>
+				  <td colspan="5">
+				      <a id="links" href="https://www-k6.thinkcentral.com/content/hsp/reading/journeys2014/na/gr1/extra_support_9780547896304_/launch.html" target="_blank">Decodable Readers</a><br />
+				      <a id="links" href="https://www-k6.thinkcentral.com/content/hsp/common/Journeys_2014_Student_Edition/Grade_1/journeys2014_g1_se_unit5.pdf?fbclid=IwAR1GbmUmgQu1TEsZtKZyUCaVf_YeuQC88jr1JOEyb6WYCsQCIpR1OCtfU2E" target="_blank">Reading Stories - Unit 24 - Page 116</a>
+				  </td>
+               </tr>
+               <tr>
+                  <th>10:30</th>
+                  <td colspan="5" rowspan="2">Teacher assigned packets</td>
+               </tr>
+               <tr>
+                  <th>11:00</th>
+                  
+               </tr>
+               <tr>
+                  <th>11:30</th>
+                  <td colspan="5">"Me" Time - no screens!</td>
+                  
+                  
+               </tr>
+               <tr>
+                  <th >12:00</th>
+				  <td colspan="5">LUNCHY TIME!</td>
+               </tr>
+               <tr>
+                  <th>1:00</th>
+				  <td colspan="4" rowspan="2">Teacher Assigned Packets</td>
+				  <td rowspan="2">Friday Free Time!  If all your school work is complete and checked.</td>
+               </tr>
+               <tr>
+                  <th>1:30</th>
+               </tr>
+               <tr>
+                  <th>2:00</th>
+                  <td>Mom's Choice</td>
+                  <td>Art</td>
+                  <td>Mom's Choice</td>
+                  <td>Crafts</td>
+                  <td>Mom's Choice</td>
+               </tr>
+               <tr>
+                  <th>2:30</th>
+                  <td colspan="5">Music</td>
+               </tr>
+               <tr>
+                  <th>3:00</th>
+                  <td colspan="5">Physical Education</td>
+               </tr>
+               <tr>
+                  <th>3:30</th>
+                  <td colspan="5">Family Chores --> Assigned Daily</td>
+               </tr>
+               <tr>
+                  <th>4:00</th>
+                  <td colspan="5">Healthy Snack ...if you haven't snuck one already...</td>
+               </tr>
+			  <tr>
+                  <th>4:15</th>
+                  <td colspan="5">Video Games / TV Time</td>
+               </tr>
+			   <tr>
+                  <th>5:00</th>
+                  <td colspan="5">DADDY'S HOME!</td>
+               </tr>
+            </tbody>
+            <tfoot>
+               <tr>
+                  <td colspan="6"><a id="alcott" href="https://hastingspublicschools.org/schools/alcott-elementary/" target="_blank">Support Alcott Elementary!!</a></td>
+               </tr>
+            </tfoot>
+         </table> 
+         <br />
+         <!-- countdown clock -->
+           <h1 class="timerOut">SCHOOLS OUT IN...</h1> 
+        <div id="clockdiv"> 
+          <div> 
+            <span class="days" id="day"></span> 
+            <div class="smalltext">Days</div> 
+          </div> 
+          <div> 
+            <span class="hours" id="hour"></span> 
+            <div class="smalltext">Hours</div> 
+          </div> 
+          <div> 
+            <span class="minutes" id="minute"></span> 
+            <div class="smalltext">Minutes</div> 
+          </div> 
+          <div> 
+            <span class="seconds" id="second"></span> 
+            <div class="smalltext">Seconds</div> 
+          </div> 
+        </div> 
+        <br />
+         
+		 <header>
+         <h1>3rd Grade Schedule</h1>
+         <h2>Subject to change withouth notice</h2>
+      </header>
+      
+      
+
+      <table class="homework">
+            <caption>All Times Central</caption>
+            <colgroup>
+               <col class="timeColumn" />
+               <col class="wDayColumns" span="5" />
+            </colgroup>
+            <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>Mon</th>
+                  <th>Tue</th>
+                  <th>Wed</th>
+                  <th>Thu</th>
+                  <th>Fri</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <th>8:30</th>
+                  <td class="breakfast" colspan="5">Break Yo' Fast and Make Yo' Bed :)</td>
+               </tr>
+               <tr>
+                  <th>9:00 <br /><br />Online Learing</th>
+				  <td><a id="links" href="https://student.esparklearning.com/student/login" target="_blank">eSpark</a><br/>
+				  <a id="links" href="https://play.prodigygame.com/" target="_blank">Prodigy</a><br />
+				  <a id="links" href="https://studio.code.org/sections/FDDJFV" target="_blank">Code.org</a>
+				  </td>
+				  <td><a id="links" href="http://www.mysteryscience.com/school-closure-planning" target="_blank">Mystery Science</a><br />
+				  <a id="links" href="https://student.esparklearning.com/student/login" target="_blank">eSpark</a><br />
+				  <a id="links" href="https://studio.code.org/sections/FDDJFV" target="_blank">Code.org</a>
+				  </td>
+				  <td><a id="links" href="http://www.kahnacademy.com" target="_blank">Kahn Academy</a><br />
+				  <a id="links" href="https://studio.code.org/sections/FDDJFV" target="_blank">Code.org</a>
+				  </td>
+				  <td><a id="links" href="https://play.prodigygame.com/" target="_blank">Prodigy</a> <br />
+				  <a id="links" href="https://student.esparklearning.com/student/login" target="_blank">eSpark</a><br />
+				  <a id="links" href="https://studio.code.org/sections/FDDJFV" target="_blank">Code.org</a>
+				  </td>
+				  <td><a id="links" href="https://archive.org/details/msdos_Oregon_Trail_The_1990" target="_blank">Oregon Trail Game</a><br />
+				  <a id="links" href="https://studio.code.org/sections/FDDJFV" target="_blank">Code.org</a><br />
+				  <a id="links" href="https://app.typingagent.com/site/login?domain=hastingsne" target="_blank">Typing Agent</a>
+				  </td>
+				</tr>
+               <tr>
+                  <th>9:30</th>
+                  <td colspan="5">Read a book!<br />
+                  <a id="links" href="https://www.getepic.com/sign-in/educator" target="_blank">AR Reading</a><br />
+                  <a id="links" href="https://global-zone50.renaissance-go.com/welcomeportal/205852">AR Testing</a></td>
+               </tr>
+               <tr>
+                  <th>10:00</th>
+                  <td><a id="links" href="https://www.getepic.com/sign-in/educator" target="_blank">AR Reading</a><br />
+                  <a id="links" href="https://global-zone50.renaissance-go.com/welcomeportal/205852">AR Testing</a></td>
+				  <td>Zoom Class Meeting</td>
+				  <td>Zoom Class Meeting</td>
+				  <td><a id="links" href="https://www.getepic.com/sign-in/educator" target="_blank">AR Reading</a><br />
+                  <a id="links" href="https://global-zone50.renaissance-go.com/welcomeportal/205852">AR Testing</a></td>
+				  <td><a id="links" href="https://www.getepic.com/sign-in/educator" target="_blank">AR Reading</a><br />
+                  <a id="links" href="https://global-zone50.renaissance-go.com/welcomeportal/205852">AR Testing</a></td>
+				  
+               </tr>
+               <tr>
+                  <th>10:30</th>
+                  <td colspan="5" rowspan="2">Teacher assigned packets</td>
+               </tr>
+               <tr>
+                  <th>11:00</th>
+                  
+               </tr>
+               <tr>
+                  <th>11:30</th>
+                  <td colspan="5">"Me" time - No screens!</td>
+                  
+               </tr>
+               <tr>
+                  <th >12:00</th>
+				  <td colspan="5">LUNCHY TIME!</td>
+               </tr>
+               <tr>
+                  <th>1:00</th>
+				  <td colspan="4" rowspan="2">Teacher Assigned Packets</td>
+				  <td rowspan="2">Friday Free Time!  If all your school work is complete and checked.</td>
+               </tr>
+               <tr>
+                  <th>1:30</th>
+               </tr>
+               <tr>
+                  <th>2:00</th>
+                  <td>Mom's Choice</td>
+                  <td>Art</td>
+                  <td>Mom's Choice</td>
+                  <td>Crafts</td>
+                  <td>Mom's Choice</td>
+               </tr>
+               <tr>
+                  <th>2:30</th>
+                  <td colspan="5">Music</td>
+               </tr>
+               <tr>
+                  <th>3:00</th>
+                  <td colspan="5">Physical Education</td>
+               </tr>
+               <tr>
+                  <th>3:30</th>
+                  <td colspan="5">Family Chores --> Assigned Daily</td>
+               </tr>
+               <tr>
+                  <th>4:00</th>
+                  <td colspan="5">Healthy Snack ...if you haven't snuck one already...</td>
+               </tr>
+			  <tr>
+                  <th>4:15</th>
+                  <td colspan="5">Video Games / TV Time</td>
+               </tr>
+			   <tr>
+                  <th>5:00</th>
+                  <td colspan="5">DADDY'S HOME!</td>
+               </tr>
+            </tbody>
+            <tfoot>
+               <tr>
+                  <td colspan="6"><a id="alcott" href="https://hastingspublicschools.org/schools/alcott-elementary/" target="_blank">Support Alcott Elementary!!</a></td>
+               </tr>
+            </tfoot>
+         </table> 
+         
+         <!--
+         <nav id="links">
+             <ul>
+                 <li><a href="#"></a></li>
+             </ul>
+         </nav>
+         -->
+        
+        <!-- begin wwww.htmlcommentbox.com -->
+ <div id="HCB_comment_box" style="padding: 30px;"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
+ <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/simple/skin.css" />
+ <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&opts=16862&num=10&ts=1585504946044");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+<!-- end www.htmlcommentbox.com -->
+        
+      <aside>
+          <!--quote of the day -->
+          <script 
+          src="https://www.brainyquote.com/link/quotebr.js"></script>
+          <small><i><a
+              href="com.brainyquote.url.CreateUrl@9de9cd2"
+              target="_blank" rel="nofollow">more Quotes
+          </a></i></small>
+      </aside>
+      
+      
+      
+      
+      
+      
+   </article>   
+   
+   <footer>
+      <section>By: Adam Saenzpardo<br />Updated: 4/18/2020</section>
+   </footer>
+</body>
+</html>
