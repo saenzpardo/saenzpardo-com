@@ -10,28 +10,45 @@
     <script src="ipad.js"></script>
     <script src="game.js"></script>
     <style>
+      html {
+        background-color: rgb(51,51,51);
+      }
       #game-container {
         display: flexbox;
+        /* background: white; */
       }
       .game {
         display: flexbox;
         position: relative;
-        text-align: center;   
-         
+        text-align: center;  
+        /* background: white;  */
+      }
+      .gameHeader {
+        padding-top: 40px;
+        padding-bottom: 25px;
       }
       h1, h3 {
         color: magenta;
-        filter: invert(75%);
+        filter: invert(65%);
       }
       body {
        /* background-image: linear-gradient(135deg, red, orange, yellow, orange, red);
        */
-       background-image: white;
+       margin-left: auto;
+       margin-right: auto;
+       background: darkgray;
+       width: 960px;
+       display: block;
+       box-shadow: 0 0 8px 8px inset;
       }
       #canvas { 
         border:1px solid black;
         margin: 15px;
+        background-color: white;
          }
+      .footer {
+        text-align: center;
+      }
       .button { position:absolute; border:1px solid black; }
       #left-controls { position:absolute; left:1px; bottom:0px; display:none; }
       #right-controls { position:absolute; right:1px; bottom:0px; display:none; }
@@ -39,13 +56,14 @@
       #left { width:100px; height:100px; bottom:0px;}
       #right { width:100px; height:100px; bottom:0px; left:100px; }
       #space { width:200px; height:200px; bottom:0px; right:0px; }
+
+
     </style>
   </head>
   <body>
     <section class="game">
-      <h1>Asteroids</h1>
-      <h3>Not optimized for mobile devices</h3>
-       
+      <h1 class="gameHeader">Asteroids!</h1>
+      <!-- <h3>Not optimized for mobile devices</h3>        -->
       <div id="game-container">
         <canvas id="canvas" width="780" height="540"></canvas>
         <div id="left-controls">
@@ -57,7 +75,9 @@
           <div id="space" class='button'>FIRE</div>
         </div>
       </div>
-      <h4 id="controls" style="">
+    
+
+      <h4 id="controls">
         Controls:
       </h4>
       <div id="controls-description">
@@ -66,24 +86,17 @@
           <em>P</em> - Pause </br>
           <em>F</em> - display framerate </br>
           <em>Arrow Keys</em> - travel </br>
-
         </p>
-
       </div>
-      <div >
-        
-
-      </div>
+    </section>
       <div id="explanation" style="float: left; margin-left: 20px; color: black; text-align: center;">
         <p>
           I found the code for this project online and continue to modify and update it as a way to practice my JavaScript skills and 
           continue to challenge myself.  Enjoy the game and please report any bugs.
         </p>
-
       </div>
-      
-      <footer class=""><div class="container">Copyright &copy; Saenzpardo.com 2020</div>
+      <footer class="footer"><div class="container">Copyright &copy; Saenzpardo.com 2020</div>
         <div class="container" style="margin-bottom: 40px;"><a href="https://www.saenzpardo.com" target=" _blank">Home</a></div></footer>
-    </section>
+    
   </body>
 </html>
